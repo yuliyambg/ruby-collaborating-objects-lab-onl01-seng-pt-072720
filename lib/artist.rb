@@ -6,6 +6,7 @@ class Artist
     @name = name
     @songs = []
     @@all << self
+
   end
 
   def songs
@@ -30,6 +31,7 @@ class Artist
 
   def print_songs
     @songs.each{|song| puts "#{song.name}"}
+    # self.songs.each {|s| puts s.name}
   end
 
 end
